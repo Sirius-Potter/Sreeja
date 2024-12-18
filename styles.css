@@ -1,0 +1,77 @@
+/* Reset styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-page background */
+body {
+    background: url('https://i.pinimg.com/736x/c1/59/bf/c159bf5490870bdcbcd10850819235ad.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start; /* Align top */
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Center container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align box to the top */
+}
+
+/* Transparent rounded rectangle */
+.box {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 25px; /* Rounded corners */
+    padding: 30px 50px; /* Increased horizontal padding */
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 900px; /* Increased max-width for more space */
+    width: 80%; /* Make sure box is responsive */
+    height: auto; /* Allow it to grow vertically as needed */
+    min-height: 80vh; /* Ensure box takes up at least 80% of the viewport height */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Heading and text styling */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    line-height: 1.6; /* Increase line height for better readability */
+    overflow-wrap: break-word; /* Ensures the text breaks and doesn't overflow */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding around text */
+    border-radius: 25px; /* Rounded edges */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for button */
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
